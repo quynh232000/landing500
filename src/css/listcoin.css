@@ -1,0 +1,504 @@
+.loading-select {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding:80px
+}
+.loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+}
+.list-coin-logo{
+    position:fixed;
+    top:30px;
+    left:30px
+}
+.list-coin-logo img {
+    width: 120px;
+    object-fit: cover
+}
+.inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position:absolute
+}
+.btn-custom-submit {
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border:none;
+    font-size:16px;
+    border-radius:8px;
+    transition:.3s ease
+}
+.btn-custom-submit:hover{
+
+background-color: rgba(22,22,24,.06);
+}
+.inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid blue;
+}
+
+    .inner.two {
+        right: 0%;
+        top: 0%;
+        animation: rotate-two 1s linear infinite;
+        border-right: 3px solid blue;
+    }
+
+    .inner.three {
+        right: 0%;
+        bottom: 0%;
+        animation: rotate-three 1s linear infinite;
+        border-top: 3px solid blue;
+    }
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #edf1f4;
+    padding: 20px;
+    color:black;
+    font-weight:bold
+}
+.hidden{
+    display:none
+}
+.importain{
+    color:orangered;
+    margin:0 2px
+}
+
+.formRequest {
+    position: relative;
+    width: 60%;
+    padding: 80px 50px 50px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+/*----------select chain*/
+.select-body {
+    border-top: 1px dashed darkblue;
+    border-bottom: 1px dashed darkblue;
+    padding: 20px 0;
+    margin:10px 0
+}
+.input-price{
+    padding:0 10px!important
+}
+.body-price {
+    width: 100% !important
+}
+
+.select-chain {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    background-color: transparent;
+    padding: 8px 20px;
+    width: 30%;
+    cursor: pointer;
+    display: flex;
+    align-items: center
+}
+.select-title{
+    color:darkblue;
+    font-weight:bold;
+    margin-bottom:10px
+}
+.select-top{
+    position:relative;
+}
+.select-top:hover .select-more{
+    display:block
+}
+.select-more {
+    display:none;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    width: 160px;
+    background: #edf1f4;
+    position:absolute;
+    top: 0;
+    left: 30%;
+    color:blue;
+    font-weight:bold
+}
+.select-item{
+    padding:4px 10px; 
+    border-bottom:1px solid rgba(22,22,24,.05);
+    transition:.3s ease;
+    text-align:center;
+    cursor:pointer;
+    
+}
+.select-item:hover{
+     box-shadow: inset 5px 5px 10px rgba(0.1, 0.1, 0.1, 0.1), inset -5px -5px 10px #fff;
+}
+.boxshadown {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    margin:10px 0;
+    display:flex;
+    align-items:center;
+}
+.boxshadown i{
+    margin-left:20px
+}
+.input-control{
+    border:none;
+    
+    width:100%;
+    border-radius:6px;
+    background-color:transparent
+}
+.input-control {
+    outline: none;
+    padding: 10px 20px;
+}
+.logo-img{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:20px 0
+    
+}
+.hidden{
+    display:none
+}
+.logo-img img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.select-mess{
+    font-size:12px;
+    color:orangered
+}
+.select-more-price {
+    top: 100% !important;
+    left: 0 !important;
+    width: 320px;
+}
+/*///select chain*/
+.logo-list-coin-body {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0 20px;
+}
+    .logo-list-coin-body label {
+        border: 1px solid rgba(22,22,24,.12);
+        background-color: rgba(22,22,24,.12);
+        padding: 2px 14px;
+        cursor:pointer;
+        
+        border-radius:20px;
+        transition:.3s ease;
+    }
+        .logo-list-coin-body label:hover {
+            background-color: rgba(22,22,24,.08);
+        }
+.logo-list-coin-body img{
+    width:34px;
+    height:34px;
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid gray;
+}
+.formRequest form {
+    position: relative;
+    width: 100%;
+}
+
+        .formRequest form h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            line-height: 0.9em;
+        }
+
+            .formRequest form h2 span {
+                font-weight: 300;
+                font-size: 0.65em;
+            }
+
+        .formRequest form .inputBox {
+            position: relative;
+            display: flex;
+            margin-top: 25px;
+        }
+
+            .formRequest form .inputBox input {
+                border: none;
+                outline: none;
+                background: transparent;
+                border-radius: 10px;
+                font-size: 1em;
+            }
+
+            .formRequest form .inputBox textarea {
+                border: none;
+                outline: none;
+                background: transparent;
+                border-radius: 10px;
+                font-size: 1em;
+                width: 100%;
+                padding: 10px 15px;
+                margin-bottom: 20px;
+                margin-top: 6px;
+                padding-left: 50px;
+                box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+            }
+
+            .formRequest form .inputBox input[type="text"] {
+                width: 100%;
+                padding: 10px 15px;
+                margin-bottom: 20px;
+                padding-left: 50px;
+                box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+            }
+
+            .formRequest form .inputBox input[type="date"] {
+                width: 100%;
+                padding: 10px 15px;
+                margin-bottom: 20px;
+                padding-left: 40px;
+                box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+            }
+
+            .formRequest form .inputBox i {
+                position: absolute;
+                left: 20px;
+                top: 23%;
+            }
+
+        .formRequest form label {
+            display: inline-table;
+        }
+
+        .formRequest form input[type="checkbox"] {
+            margin-right: 5px;
+            margin-top: -22px;
+        }
+
+        .formRequest form .inputBox input[type="submit"] {
+            margin-top: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+            width: 100%;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+            .formRequest form .inputBox input[type="submit"]:focus {
+                box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+            }
+
+        .formRequest form label .textInput {
+            font-size: 14px;
+        }
+
+        .formRequest form label {
+            margin-bottom: 5px;
+        }
+
+.textNote {
+    font-size: 13px;
+    color: black;
+    font-weight: 700;
+}
+
+.input-file-logo {
+    width: 100%;
+    padding-left: 50px !important;
+}
+
+input[name="Logo"] {
+    border-radius: 0 !important;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    .formRequest {
+        width: 100%;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+
+    textarea::placeholder {
+        font-size: 13px;
+    }
+
+    .formRequest form .inputBox input[type="text"], .formRequest form .inputBox input[type="date"], .formRequest form .inputBox textarea {
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    textarea::placeholder {
+        font-size: 12px;
+    }
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22,22,24,0.6);
+}
+
+.spinner-2 {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid rgb(248, 248, 248);
+    border-right-color: var(--primary);
+    animation: s2 1s infinite linear;
+}
+
+@keyframes s2 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.noti {
+    background-color: rgba(255, 102, 255,.08);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 4px rgba(255, 102, 255,.08);
+    display:none
+}
+.noti-img img{
+    width:80px
+}
+.noti-img{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px
+}
+.noti-text{
+    padding:10px;
+    text-align:center;
+    color:darkblue;
+    font-size:18px;
+    font-weight:bolder
+}
+.formRequest form .inputBox input[type="submit"]{
+    transition:.3s ease
+}
+.formRequest form .inputBox input[type="submit"]:hover {
+    background-color: rgba(22,22,24,.06);
+}
+/*responsive*/
+@media screen and (max-width:1190px) {
+    .select-chain{
+        width:50%;
+    }
+}
+@media screen and (max-width:490px) {
+    .select-chain {
+        width: 100%;
+        border-radius: 6px
+    }
+    .boxshadown{
+        border-radius:6px;
+    }
+    .body-price {
+        width: 100% !important;
+        border-radius: 10px
+    }
+    .formRequest{
+        padding:20px 10px
+    }
+    body{
+        padding:10px
+    }
+}
+@media  (max-width:440px){
+    .formRequest form h2 {
+        text-align: center;
+        font-size: 20px;
+        color:dodgerblue
+    }
+    .formRequest {
+        box-shadow:none;
+        padding-top:90px
+    }
+
+}

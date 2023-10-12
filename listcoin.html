@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="~/Content/img/faciconcom.png">
+    <title>Form Request ListCoin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta property="og:image" content="~/Content/home/assets/images/homethuy/bannert14.png">
+    <link rel="icon" type="image/x-icon" href="./src/images/logo.png">
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/listcoin.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+</head>
+
+<body>
+    
+        <a href="/" class="list-coin-logo">
+            <img src="./src/images/logo.svg"/>
+        </a>
+    <div class="formRequest" >
+        <form class="form-request" id="form-request-list-coin">
+            <h2>
+                Request list coin
+            </h2>
+            <div class="inputBox">
+                <input type="text" name="emailUser" placeholder="*Your email address" value="" required>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <label>
+                <input type="checkbox" checked="">
+                <span class="textInput">
+                    I declare that I have read, understood, and fully agree to the terms and
+                    conditions stipulated at
+                </span>
+            </label>
+            <label>
+                <input type="checkbox" checked="">
+                <span class="textInput">
+                    I acknowledge that Unidi reserves the right, in their sole discretion, to
+                    determine the suitability of my request for the site. In the event that Unidi rejects my request, I
+                    acknowledge that Unidi is not obligated to inform me or provide any reasons for such refusal.
+                </span>
+            </label>
+            <label>
+                <input type="checkbox" checked="">
+                <span class="textInput">
+                    I declare that the information provided on the form is accurate and complete to the best of my
+                    knowledge and that failure to fulfill these requirements may render my request inadmissible.
+                </span>
+
+            </label>
+
+            <div class="inputBox">
+                <textarea style="height: 150px;" placeholder="Relationship with the Project" name="RelationshipProject" class="relationshipproject "></textarea>
+                <i style="margin-top: -20px;" class="fa-solid fa-user-group"></i>
+
+            </div>
+            <i class="textNote">
+                Please describe your relationship with the project (e.g. CEO, founder, employee,
+                community member
+                …)
+            </i>
+            <div class="select-body">
+                <div class="select-title">Search for your contract information(*)</div>
+                <div class="select-top">
+                    <div class="select-chain select-chain-title">
+                        --Select chain*--
+                    </div>
+                    <div class="select-more list-chain">
+                        <div class="select-item item-chain" >BSC</div>
+                        <div class="select-item item-chain" >TRON</div>
+                    </div>
+                </div>
+                <div class="boxshadown  body-input-address-token">
+                    <i class="fa-solid fa-address-book"></i>
+                    <input class=" input-control " name="contract"  placeholder="Token contract (width 6 decimals)..." />
+                </div>
+                <div class="select-mess"></div>
+                <div class="loading-select" style="display:none">
+                    <div class="loader">
+                        <div class="inner one"></div>
+                        <div class="inner two"></div>
+                        <div class="inner three"></div>
+                    </div>
+                </div>
+                <div class="select-show">
+
+                </div>
+            </div>
+            <div class="" style="margin:20px 0;">
+                <label>Price Link(*)</label>
+                <div class="select-top">
+                    <div class="select-chain body-price">
+                        <i class="fa-regular fa-file"></i>
+                        <input type="text" class="input-control input-price" placeholder="Price Link" name="priceLink" /><span>Link</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textInput">
+                Project Launch Date:
+            </div>
+            <div class="inputBox">
+
+                <input type="date" id="projectLaunchDate" name="DateLaunch">
+            </div>
+            <i class="textNote">
+                The date the project launched (e.g. token sale, genesis block, formation of company,
+                drafting of
+                business
+                plan) Where possible, provide evidence/links for verification.
+            </i>
+            <div class="inputBox">
+                <textarea style="height: 150px;" placeholder="Detailed Project Description (Cryptoasset)" name="DetailProjectDescription"></textarea>
+                <i style="margin-top: -20px;" class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="inputBox">
+                <textarea style="height: 150px;" placeholder="Media Coverage/Awards" name="MediaCoverage "></textarea>
+                <i style="margin-top: -20px;" class="fa-solid fa-award"></i>
+            </div>
+            <i class="textNote">Provide valid URL(s) to articles/references.</i>
+            <div class="inputBox">
+                <input type="text" placeholder="Website 1" name="Website1">
+                <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Website 2" name="Website2">
+                <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Number of Decimals" name="PhoneNumber">
+                <i class="fa-regular fa-id-badge"></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Block Explorer" name="BlockExplorer">
+                <i class="fa-solid fa-cubes"></i>
+            </div>
+            <i class="textNote">Insert a valid URL with the CONTRACT ADDRESS, e.g. https://etherscan.io/token/0x27f0d7.... This is a mandatory field for projects that are already trading on an exchange.</i>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Affiliation with other exchanges (Type 'NA' if not applicable)" name="Affiliation">
+                <i class="fa-brands fa-connectdevelop"></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Whitepaper / Technical Documentation" name="Whitepaper">
+                <i class="fa-regular fa-newspaper"></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Twitter" name="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Telegram" name="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Project introduction video" name="ProjectVideo">
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Facebook" name="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <label class="list-coin-terms mt-4">
+                <input type="checkbox" checked="">
+                <span class="textInput">
+                    I take full responsibility for the information I provide in accordance with  <a href="#" style="padding:0 4px">The terms</a> & <a href="#" style="padding:0 4px"> Policies</a> of Unidi.
+                </span>
+            </label>
+            <div class="inputBox">
+                <a style="text-align: center;" href="/" class="btn-submit-request btn-custom-submit" type="submit">Send</a>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
