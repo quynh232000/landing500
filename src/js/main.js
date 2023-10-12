@@ -193,7 +193,7 @@ $().ready(function(){
             },5000)
         }else{
             toast({
-                title: "Noty !",
+                title: "Noti !",
                 message: "Please enter all fields!!",
                 type: "warning"
             });
